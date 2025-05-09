@@ -81,7 +81,7 @@ for linha in sheet_produtos.iter_rows(min_row=2):
     pyautogui.click(1494,808,duration=1)
 
     fabricante = linha[12].value 
-    pyperclic.copy(fabricante)
+    pyperclip.copy(fabricante)
     pyautogui.click(1465,347,duration=1)
     pyautogui.hotkey('ctrl','v')
 
@@ -98,7 +98,7 @@ for linha in sheet_produtos.iter_rows(min_row=2):
     codigo_de_barras = linha[15].value
     pyperclip.copy(codigo_de_barras)
     pyautogui.click(1471,655,duration=1)
-    pyutogui.hotkey('ctrl','v')
+    pyautogui.hotkey('ctrl','v')
 
     localizacao_armazem = linha[16].value 
     pyperclip.copy(localizacao_armazem)
